@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Survimpact Affiliate - Tariff Grid</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="navbar sticky-top flex-md-nowrap p-3 border-bottom bg-darkcyan">
+            <a href="affiliate-dashboard.html"><img class="logo" src="assets/img/Survimpact-logo.svg" alt="logo Survimpact"/></a>
+            <div class="d-flex flex-fill flex-md-grow-0 justify-content-between align-items-center">
+                <a class="me-3 text-decoration-none" href="affiliate-notifications.html" role="button"><img class="member-space-logo right-side" src="assets/img/notification_logo.png" alt="logo Notification"/></a>
+                <div class="dropdown bg-gray-50 py-2 pe-2 ps-2 rounded-pill">
+                    <a class="btn btn-white p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profile
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="affiliate-profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="affiliate-login.html">Log out</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-white fs-1 d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" spellcheck="false">&#x2630;</button>
+            </div>
+        </header>
+        <div class="container-fluid maxed">
+            <div class="row">
+                <nav class="d-md-flex bg-light sidebar collapse" id="sidebarMenu">
+                    <div class="sidesticky d-md-flex flex-column justify-content-between">
+                        <div class="py-4 px-3 p-md-0">
+                            <ul class="nav flex-column pt-2">
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="affiliate-dashboard.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/dashboard_logo.png" alt="logo Dashboard"/>
+                                            <span class="member-space-gap">Dashboard</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="affiliate-link.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/link_logo.png" alt="logo Link"/>
+                                            <span class="member-space-gap">Affiliate Link</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="affiliate-users-history.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/crowd_logo.png" alt="logo Crowd"/>
+                                            <span class="member-space-gap">Users History</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="affiliate-invoice.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/bill_logo.png" alt="logo Bill"/>
+                                            <span class="member-space-gap">Invoice</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link active fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="affiliate-price-grid.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/tariff_logo.png" alt="logo Tariff"/>
+                                            <span class="member-space-gap">Tariff Grid</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="affiliate-contact.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/messages_logo.png" alt="logo Messages"/>
+                                            <span class="member-space-gap">Contact</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2"><a class="nav-link ps-4 fs-6 rounded-3" aria-current="page" href="affiliate-chat-history.html">Chat History</a></li>
+                                <li class="nav-item mb-2 mt-5 d-inline d-md-none">
+                                    <a class="nav-link fs-6 fs-md-5 bg-white rounded-3 d-flex align-items-center" aria-current="page" href="#">
+                                        <span class="fs-5 survicon-logout ic-nav"></span>
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 text-center"><small>Survimpact 2024. All rights reserved.</small></div>
+                    </div>
+                </nav>
+                <div class="col-md-9 ms-sm-auto col-lg-9 px-md-4 py-3 px-3">
+                    <h1 class="fs-4">Survimpact Tariff Grid:</h1>
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-12 col-md-8 mx-0 px-4 pe-md-0 d-flex flex-column justify-content-between">
+                            <div class="border-start border-info-bis border-5 ps-3 ps-md-5 pe-3 py-3 mb-1 bg-info-50-bis"><p class="mb-0">This table contains the user price per country and currency.</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 ms-sm-auto col-lg-9 px-md-4 py-3 px-3">
+                    <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive">
+                            <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                                <thead>
+                                <tr role="row">
+                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 219.07px;">COUNTRY</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 172.516px;">LANGUAGE</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 123.586px;">PRICE EURO</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr role="row" class="even">
+                                        <th>Canada (Français)</th>
+                                        <th>Français</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Belgique</th>
+                                        <th>Français</th>
+                                        <th>2.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>België</th>
+                                        <th>Dutch</th>
+                                        <th>2.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Deutschland</th>
+                                        <th>Deutsch</th>
+                                        <th>2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>España</th>
+                                        <th>Española</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>France</th>
+                                        <th>Français</th>
+                                        <th>2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Italia</th>
+                                        <th>Italiano</th>
+                                        <th>1.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Netherlands</th>
+                                        <th>Dutch</th>
+                                        <th>2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Österreich</th>
+                                        <th>Deutsch</th>
+                                        <th>2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Polska</th>
+                                        <th>Polskie</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Portugal</th>
+                                        <th>Português</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Suisse (Français)</th>
+                                        <th>Français</th>
+                                        <th>2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Schweiz (Deutsch)</th>
+                                        <th>Deutsch</th>
+                                        <th>2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Svizzera (Italiano)</th>
+                                        <th>Italiano</th>
+                                        <th>2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Sverige</th>
+                                        <th>Svenska</th>
+                                        <th>2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Türkiye</th>
+                                        <th>Türkçe</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>United Kingdom</th>
+                                        <th>English</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>South Africa</th>
+                                        <th>English</th>
+                                        <th>0.6 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>United States Of America</th>
+                                        <th>English</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Australia</th>
+                                        <th>English</th>
+                                        <th>2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Estados Unidos De America (Española)</th>
+                                        <th>Española</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Ecuador</th>
+                                        <th>Española</th>
+                                        <th>0.005 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Argentina</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Chile</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Colombia</th>
+                                        <th>Española</th>
+                                        <th>0.05 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Venezuela</th>
+                                        <th>Española</th>
+                                        <th>0.005 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Peru</th>
+                                        <th>Española</th>
+                                        <th>0.05 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Mexico</th>
+                                        <th>Española</th>
+                                        <th>0.3 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Nigeria</th>
+                                        <th>English</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Canada (English)</th>
+                                        <th>English</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Brazil</th>
+                                        <th>Português</th>
+                                        <th>0.6 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Ireland</th>
+                                        <th>English</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Indonesia</th>
+                                        <th>Indonesian</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>România</th>
+                                        <th>Romanian</th>
+                                        <th>0.3 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Philippines</th>
+                                        <th>English</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Singapore</th>
+                                        <th>English</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Moldova</th>
+                                        <th>Romanian</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Magyarország</th>
+                                        <th>Hungarian</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Danmark</th>
+                                        <th>Danish</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Norge</th>
+                                        <th>Norwegian</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Finland</th>
+                                        <th>Finnish</th>
+                                        <th>0.8 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Yкраїна</th>
+                                        <th>Ukrainian</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>България</th>
+                                        <th>Bulgarian</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Guatemala</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Uruguay</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Costa Rica</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Macedonia</th>
+                                        <th>Macedonian</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Thailand</th>
+                                        <th>Thai</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Malaysia</th>
+                                        <th>Malay</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Vietnam</th>
+                                        <th>Vietnamese</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Israël</th>
+                                        <th>Hebrew</th>
+                                        <th>0.3 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Saudi Arabia (العربية)</th>
+                                        <th>Arabic</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Paraguay</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Croatia</th>
+                                        <th>Croatian</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Ελλάδα</th>
+                                        <th>Greek</th>
+                                        <th>0.3 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Česky</th>
+                                        <th>Czech</th>
+                                        <th>0.4 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Slovensko</th>
+                                        <th>Slovak</th>
+                                        <th>0.15 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Lietuva</th>
+                                        <th>Lithuanian</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Luxemburg</th>
+                                        <th>German</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Luxembourg</th>
+                                        <th>Français</th>
+                                        <th>1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Slovenija</th>
+                                        <th>Slovenian</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Latvija</th>
+                                        <th>Latvian</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Estonia</th>
+                                        <th>Eesti</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Algérie (Français)</th>
+                                        <th>Français</th>
+                                        <th>0.05 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Algérie (العربية)</th>
+                                        <th>Arabic</th>
+                                        <th>0.05 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Bahrein</th>
+                                        <th>English</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Maroc (العربية)</th>
+                                        <th>Arabic</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Egypt (العربية)</th>
+                                        <th>Arabic</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Kenya</th>
+                                        <th>English</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Uganda</th>
+                                        <th>English</th>
+                                        <th>0.2 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Kuwait (English)</th>
+                                        <th>English</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Kuwait (العربية)</th>
+                                        <th>Arabic</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Bolivia</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Angola</th>
+                                        <th>Português</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Qatar (العربية)</th>
+                                        <th>Arabic</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Qatar (English)</th>
+                                        <th>English</th>
+                                        <th>0.5 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Bangladesh</th>
+                                        <th>English</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Maroc (Français)</th>
+                                        <th>Français</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Tunisie</th>
+                                        <th>Français</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Gabon</th>
+                                        <th>English</th>
+                                        <th>0.05 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Ghana</th>
+                                        <th>English</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Côte d'Ivoire</th>
+                                        <th>Français</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Cameroun (Français)</th>
+                                        <th>Français</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Cameroon (English)</th>
+                                        <th>English</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Zambia</th>
+                                        <th>English</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Botswana</th>
+                                        <th>English</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>El Salvador</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Honduras</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Nicaragua</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Cambodia</th>
+                                        <th>English</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Panamá</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Puerto Rico</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>República Dominicana</th>
+                                        <th>Española</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Zimbabwe</th>
+                                        <th>English</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                    <tr role="row" class="even">
+                                        <th>Lesotho</th>
+                                        <th>English</th>
+                                        <th>0.1 € </th>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Bootstrap core JS-->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+    </body>
+</html>
