@@ -13397,12 +13397,6 @@ a:hover {
 .flash-border {
     animation: blink-animation-brickred 0.8s infinite linear;
 }
-@keyframes blink-animation-brickred {
-    0%, 100% { border-color: rgba(255, 255, 255, 0.95); }
-    25% { border-color: rgba(240, 128, 128, 0.95); }
-    50% { border-color: rgba(241, 93, 92, 0.95); }
-    75% { border-color: rgba(240, 128, 128, 0.95); }
-}
 
 .btn-submit {
     font-weight: 400;
