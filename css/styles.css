@@ -13059,32 +13059,32 @@ a:hover {
 }
 
 .cookies-navbar-row {
+    width: 100%;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    padding: 30px 200px 20px 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
 }
 
 .bottom-cookies-navbar {
-    height: 100px;
-    width: 100%;
-    /*z-index: 1;*/
-    position: fixed;
     align-items: center;
     justify-content: center;
-    bottom: 100px;
     display: flex;
     background-color: #f15d5c;
+    margin-bottom: 30px;
 }
 
 .accept-cookies-btn {
     color: white;
-    font-size: 17px;
+    font-weight: 600 !important;
 }
 .accept-cookies-btn:hover {
     color: white;
-    font-size: 18px;
+    font-weight: 700 !important;
 }
 
 .conv-tab-ext {
