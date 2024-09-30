@@ -13468,3 +13468,8 @@ a:hover {
 .status-pending {
     color: #efab15;
 }
+
+.ctr-unavailable {
+  text-decoration-line: line-through;
+  background-color: #6c757d;
+}
