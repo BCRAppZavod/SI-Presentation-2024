@@ -13473,3 +13473,117 @@ a:hover {
   text-decoration-line: line-through;
   background-color: #6c757d;
 }
+
+.sticky-bottom {
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  display: flex;
+}
+
+.dark-font {
+  color: #404040;
+}
+
+.w-30 {
+  width: 30%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-90 {
+  width: 90%;
+}
+
+.free-question {
+  font-weight: 500;
+  background-color: #fff8f2;
+  border: #f15d5c solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 0px 0px rgba(241, 93, 92, 0.25);
+  margin-bottom: 1.5rem !important;
+}
+
+.multi-choice-question {
+  display: grid;
+  grid-template-columns: auto;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: #f15d5c solid 1px;
+  box-shadow: 5px 5px 0px 0px rgba(241, 93, 92, 0.25);
+  margin-bottom: 1.5rem !important;
+}
+
+.cols-1 {
+  display: grid;
+  grid-template-columns: auto;
+}
+.cols-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.cols-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.cols-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.cols-5 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.matrix-lines {
+  background-color: #fff8f2;
+  border: 1px solid #fff;
+  padding: 5px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.top {
+  background-color: #f15d5c !important;
+  font-weight: 500;
+}
+
+.small {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.unique-choice-question {
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff8f2;
+  border: #f15d5c solid 1px;
+  box-shadow: 5px 5px 0px 0px rgba(241, 93, 92, 0.25);
+  margin-bottom: 1.5rem !important;
+}
+
+.binary-choice-question {
+  display: grid;
+  grid-template-columns: auto;
+  font-weight: 500;
+  background-color: #fff8f2;
+  border: #f15d5c solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 0px 0px rgba(241, 93, 92, 0.25);
+  margin-bottom: 1.5rem !important;
+}
