@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Survimpact - Plus de sondage</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="navbar sticky-top flex-md-nowrap p-3 border-bottom bg-darkcyan">
+            <a href="dashboard.html"><img class="logo" src="assets/img/Survimpact-logo.svg" alt="logo Survimpact" /></a>
+            <div class="d-flex flex-fill flex-md-grow-0 justify-content-between align-items-center">
+                <a class="me-3 text-decoration-none" href="notifications.html" role="button"><img class="member-space-logo right-side" src="assets/img/notification_logo.png" alt="logo Notification"/></a>
+                <div class="dropdown bg-gray-50 py-2 pe-2 ps-2 rounded-pill">
+                    <a class="btn btn-white p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profil
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="user-profile.html">Profil</a></li>
+                        <li><a class="dropdown-item" href="user-login.html">Deconnexion</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-white fs-1 d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" spellcheck="false">&#x2630;</button>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="d-md-flex bg-light sidebar collapse" id="sidebarMenu">
+                    <div class="sidesticky d-md-flex flex-column justify-content-between">
+                        <div class="py-4 px-3 p-md-0">
+                            <ul class="nav flex-column pt-2">
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="user-dashboard.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/dashboard_logo.png" alt="logo Dashboard"/>
+                                            <span class="member-space-gap">Tableau de bord</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link active fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="user-more-details.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/profile_details_logo.png" alt="logo Profile Details"/>
+                                            <span class="member-space-gap">Plus de sondages</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="user-convert-points.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/tokens_logo.png" alt="logo Tokens"/>
+                                            <span class="member-space-gap">Points</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link ps-4 fs-6 rounded-3" aria-current="page" href="user-convert-points.html">Convertir mes points</a></li>
+                                <li class="nav-item"><a class="nav-link ps-4 fs-6 rounded-3" aria-current="page" href="user-wallet.html">Mon Wallet</a></li>
+                                <li class="nav-item mb-2"><a class="nav-link ps-4 fs-6 rounded-3" aria-current="page" href="user-conversions-history.html">Historique des conversions</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="user-sponsoring.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/crowd_logo.png" alt="logo Crowd"/>
+                                            <span class="member-space-gap">Parrainage</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2"><a class="nav-link ps-4 fs-6 rounded-3" aria-current="page" href="user-sponsored-history.html">Historique des invitations</a></li>
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="user-rating.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/star_logo.png" alt="logo Star"/>
+                                            <span class="member-space-gap">Notez Survimpact</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-6 fs-md-5 rounded-3 d-flex align-items-center" aria-current="page" href="user-contact.html">
+                                        <div class="member-space-menu">
+                                            <img class="member-space-logo" src="assets/img/messages_logo.png" alt="logo Messages"/>
+                                            <span class="member-space-gap">Support/aide</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2"><a class="nav-link ps-4 fs-6 rounded-3" aria-current="page" href="user-chat-history.html">Historique des conversations</a></li>
+                                <li class="nav-item mb-2 mt-5 d-inline d-md-none">
+                                    <a class="nav-link fs-6 fs-md-5 bg-white rounded-3 d-flex align-items-center" aria-current="page" href="user-login.html">
+                                        <span class="fs-5 survicon-logout ic-nav"></span>
+                                        Déconnexion
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 text-center"><small>NCF Advisory 2024. All rights reserved.</small></div>
+                    </div>
+                </nav>
+                <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4 py-3 px-3">
+                    <h1 class="fs-4">Vos Informations Personnelles</h1>
+                    <div class="row">
+                        
+                        <ul class="nav nav-tabs" id="myPersonalInfo" role="tablist">
+                            <li class="nav-item" role="presentation"><button class="nav-link nav-link-color px-3 active" id="detailed-profile-tab" data-bs-toggle="tab" data-bs-target="#detailed-profile" type="button" role="tab" aria-controls="detailed-profile" aria-selected="true">Profil détaillé</button></li>
+                            <li class="nav-item" role="presentation"><button class="nav-link nav-link-color px-3" id="electronics-tab" data-bs-toggle="tab" data-bs-target="#electronics" type="button" role="tab" aria-controls="electronics" aria-selected="false">Électronique</button></li>
+                            <li class="nav-item" role="presentation"><button class="nav-link nav-link-color px-3" id="health-tab" data-bs-toggle="tab" data-bs-target="#health" type="button" role="tab" aria-controls="health" aria-selected="false">Santé</button></li>
+                            <li class="nav-item" role="presentation"><button class="nav-link nav-link-color px-3" id="hobbies-tab" data-bs-toggle="tab" data-bs-target="#hobbies" type="button" role="tab" aria-controls="hobbies" aria-selected="false">Loisirs</button></li>
+                            <li class="nav-item" role="presentation"><button class="nav-link nav-link-color px-3" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Maison</button></li>
+                            <li class="nav-item" role="presentation"><button class="nav-link nav-link-color px-3" id="savings-tab" data-bs-toggle="tab" data-bs-target="#savings" type="button" role="tab" aria-controls="savings" aria-selected="false">Épargne</button></li>
+                            <li class="nav-item" role="presentation"><button class="nav-link nav-link-color px-3" id="transport-tab" data-bs-toggle="tab" data-bs-target="#transport" type="button" role="tab" aria-controls="transport" aria-selected="false">Transport</button></li>
+                            <li class="nav-item" role="presentation"><button class="nav-link nav-link-color px-3" id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel" type="button" role="tab" aria-controls="travel" aria-selected="false">Voyage</button></li>
+                            <li class="nav-item" role="presentation"><button class="nav-link nav-link-color px-3" id="wellbeing-tab" data-bs-toggle="tab" data-bs-target="#wellbeing" type="button" role="tab" aria-controls="wellbeing" aria-selected="false">Bien-être</button></li>
+                        </ul>
+
+                        <div class="tab-content" id="myPersonalInfoContent">
+                            
+                            <!-- Detailed Profile -->
+                            <div class="tab-pane fade" id="detailed-profile" role="tabpanel" aria-labelledby="detailed-profile-tab">
+                                <form class="py-4 dark-font">
+
+                                    <div class="mb-md-3 px-3 pt-md-0 flex-column flex-md-row">
+                                        <h2>Insert Questions about Detailed Profile</h2>
+                                    </div>
+                                    <br>
+                                    <div class="sticky-bottom">
+                                        <button class="btn btn-primary fs-6 btn-lg text-white fw-bold" type="submit">Valider</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- End Detailed Profile -->
+
+                            <!-- Electronics -->
+                            <div class="tab-pane fade show active" id="electronics" role="tabpanel" aria-labelledby="electronics-tab">
+                                <form class="py-4 dark-font">
+
+                                    <div class="mb-md-3 px-3 pt-md-0 flex-column flex-md-row">
+                                        <h2>Insert Questions about Electronics</h2>
+                                    </div>
+
+                                    <br>
+                                    <div class="sticky-bottom">
+                                        <button class="btn btn-primary fs-6 btn-lg text-white fw-bold" type="submit">Valider</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- End Electronics -->
+
+                            <!-- Health -->
+                            <div class="tab-pane fade" id="health" role="tabpanel" aria-labelledby="health-tab">
+                                <form class="py-4 dark-font">
+
+                                    <div class="mb-md-3 px-3 pt-md-0 flex-column flex-md-row">
+                                        <h2>Insert Questions about Health</h2>
+                                    </div>
+
+                                    <br>
+                                    <div class="sticky-bottom">
+                                        <button class="btn btn-primary fs-6 btn-lg text-white fw-bold" type="submit">Valider</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- End Health -->
+
+                            <!-- Hobbies -->
+                            <div class="tab-pane fade" id="hobbies" role="tabpanel" aria-labelledby="hobbies-tab">
+                                <form class="py-4 dark-font">
+
+                                    <div class="mb-md-3 px-3 pt-md-0 flex-column flex-md-row">
+                                        <h2>Insert Questions about Hobbies</h2>
+                                    </div>
+
+                                    <br>
+                                    <div class="sticky-bottom">
+                                        <button class="btn btn-primary fs-6 btn-lg text-white fw-bold" type="submit">Valider</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- End Hobbies -->
+
+                            <!-- Home -->
+                            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <form class="py-4 dark-font">
+
+                                    <div class="mb-md-3 px-3 pt-md-0 flex-column flex-md-row">
+                                        <h2>Insert Questions about Home</h2>
+                                    </div>
+
+                                    <br>
+                                    <div class="sticky-bottom">
+                                        <button class="btn btn-primary fs-6 btn-lg text-white fw-bold" type="submit">Valider</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- End Home -->
+
+                            <!-- Savings -->
+                            <div class="tab-pane fade" id="savings" role="tabpanel" aria-labelledby="savings-tab">
+                                <form class="py-4 dark-font">
+
+                                    <!-- Q0 (Free Text) -->
+                                    <div class="free-question w-70">
+                                        <label for="sv-q0">Quel est votre pseudo ?</label>
+                                        <input class="form-control mt-2" id="sv-q0" type="text" placeholder="Entrez votre pseudo" aria-label="" required/>
+                                    </div>
+
+                                    <!-- Q1 (Free Integer) -->
+                                    <div class="free-question w-70">
+                                        <label for="sv-q1">De combien de comptes bancaires disposez-vous ?</label>
+                                        <input class="form-control mt-2" id="sv-q1" type="number" placeholder="Entrez un nombre" aria-label="" required/>
+                                    </div>
+
+                                    <!-- Q2 (Multichoice with Matrix) -->
+                                    <div class="multi-choice-question w-30">
+                                        <div><p>Parmi ces types de compte, lesquels possédez-vous ?</p></div>
+                                        <div class="cols-1">
+                                            <div class="matrix-lines top">Type de Compte</div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q2-a1" name="q2"/>
+                                                <label for="q2-a1">Compte personnel</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q2-a2" name="q2"/>
+                                                <label for="q2-a2">Compte joint</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q2-a3" name="q2"/>
+                                                <label for="q2-a3">Autre compte</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Q4A (Binary choice) -->
+                                    <div class="binary-choice-question w-50">
+                                        <div><p>Disposez-vous d'une carte bancaire ?</p></div>
+                                        <div class="cols-2">
+                                            <div>
+                                                <input class="form-check-input small" type="radio" id="q4a-a1" name="q4a" value="0"/>
+                                                <label for="q4a-a1">Oui</label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input small" type="radio" id="q4a-a2" name="q4a" value="1" checked/>
+                                                <label for="q4a-a1">Non</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Q4B (Multichoice with Checkbox) -->
+                                    <div class="multi-choice-question w-30">
+                                        <div><p>Parmi ces types de cartes, lesquels possédez-vous ?</p></div>
+                                        <div class="cols-1">
+                                            <div class="matrix-lines top">Type de Carte</div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q4b-a1" name="q4b"/>
+                                                <label for="q4b-a1">Visa</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q4b-a2" name="q4b"/>
+                                                <label for="q4b-a2">Master Card</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q4b-a3" name="q4b"/>
+                                                <label for="q4b-a3">Carte Bleue</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Q6 (Multichoice with Matrix) -->
+                                    <div class="multi-choice-question w-90">
+                                        <div><p>Quels sont vos types de crédit ?</p></div>
+                                        <div class="cols-5">
+                                            <div class="matrix-lines top">Type de Crédit</div>
+                                            <div class="matrix-lines top">Un en cours</div>
+                                            <div class="matrix-lines top">Plusieurs en cours</div>
+                                            <div class="matrix-lines top">Remboursé(s)</div>
+                                            <div class="matrix-lines top">Aucun</div>
+                                            <div class="matrix-lines">Crédit immobilier</div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-a-a1" name="savings-q6-a" value="1">
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-a-a2" name="savings-q6-a" value="2">
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-a-a3" name="savings-q6-a" value="3">
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-a-a4" name="savings-q6-a" value="0" checked>
+                                            </div>
+                                            <div class="matrix-lines">Crédit auto</div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-b-a1" name="savings-q6-b" value="1">
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-b-a2" name="savings-q6-b" value="2">
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-b-a3" name="savings-q6-b" value="3">
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-b-a4" name="savings-q6-b" value="0" checked>
+                                            </div>
+                                            <div class="matrix-lines">Crédit conso</div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-c-a1" name="savings-q6-c" value="1">
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-c-a2" name="savings-q6-c" value="2">
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-c-a3" name="savings-q6-c" value="3">
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input class="form-check-input small" type="radio" id="sv-q6-c-a4" name="savings-q6-c" value="0" checked>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Q8 (Unique choice with List) -->
+                                    <div class="unique-choice-question w-90">
+                                        <label for="sv-q8">Pour vous le crédit, c'est :</label>
+                                            <select class="form-control" name="savings-q8" id="sv-q8">
+                                            <option value="">--Sélectionner une réponse--</option>
+                                            <option value="0">Vous ne voulez pas en entendre parler, vous ne voulez pas vous endetter</option>
+                                            <option value="1">Vous ne voulez avoir recours au crédit que pour votre logement</option>
+                                            <option value="2">Vous trouvez normal de recourir au crédit pour de gros achats</option>
+                                            <option value="3">Vous trouvez normal de recourir au crédit pour des gros achats et des imprévus</option>
+                                            <option value="4">Vous pensez que le crédit sert à profiter de la vie, se faire plaisir</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Q17 (Multichoice with Checkbox) -->
+                                    <div class="multi-choice-question w-70">
+                                        <div><p>Quelles sont les raisons qui vous motivent pour changer d'assureur ?</p></div>
+                                        <div class="cols-1">
+                                            <div class="matrix-lines top">Motifs</div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a1" name="q17"/>
+                                                <label for="q17-a1">Le Prix</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a2" name="q17"/>
+                                                <label for="q17-a2">Meilleures garanties</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a3" name="q17"/>
+                                                <label for="q17-a3">Meilleur rapport qualité prix</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a4" name="q17"/>
+                                                <label for="q17-a4">Influence de vos proches</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a5" name="q17"/>
+                                                <label for="q17-a5">Résiliation de contrat par votre assureur</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a6" name="q17"/>
+                                                <label for="q17-a6">Non satisfaction du règlement d'un sinistre</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a7" name="q17"/>
+                                                <label for="q17-a7">Même assureur que votre conjoint(e) / un parent</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a8" name="q17"/>
+                                                <label for="q17-a8">Changement : véhicule, habitation etc.</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a9" name="q17"/>
+                                                <label for="q17-a9">Problème de proximité géographique</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a10" name="q17"/>
+                                                <label for="q17-a10">Nouveau besoin non couvert par votre assureur</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a11" name="q17"/>
+                                                <label for="q17-a11">Souhait d'une marque en particulier</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a12" name="q17"/>
+                                                <label for="q17-a12">Publicité</label>
+                                            </div>
+                                            <div class="matrix-lines">
+                                                <input type="checkbox" id="q17-a13" name="q17"/>
+                                                <label for="q17-a13">Autres</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <div class="sticky-bottom">
+                                        <button class="btn btn-primary fs-6 btn-lg text-white fw-bold" type="submit">Valider</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- End Savings -->
+
+                            <!-- Transport -->
+                            <div class="tab-pane fade" id="transport" role="tabpanel" aria-labelledby="transport-tab">
+                                <form class="py-4 dark-font">
+
+                                    <div class="mb-md-3 px-3 pt-md-0 flex-column flex-md-row">
+                                        <h2>Insert Questions about Transport</h2>
+                                    </div>
+
+                                    <br>
+                                    <div class="sticky-bottom">
+                                        <button class="btn btn-primary fs-6 btn-lg text-white fw-bold" type="submit">Valider</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- End Transport -->
+
+                            <!-- Travel -->
+                            <div class="tab-pane fade" id="travel" role="tabpanel" aria-labelledby="travel-tab">
+                                <form class="py-4 dark-font">
+
+                                    <div class="mb-md-3 px-3 pt-md-0 flex-column flex-md-row">
+                                        <h2>Insert Questions about Travel</h2>
+                                    </div>
+                                    
+                                    <br>
+                                    <div class="sticky-bottom">
+                                        <button class="btn btn-primary fs-6 btn-lg text-white fw-bold" type="submit">Valider</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- End Travel -->
+
+                            <!-- Wellbeing -->
+                            <div class="tab-pane fade" id="wellbeing" role="tabpanel" aria-labelledby="wellbeing-tab">
+                                <form class="py-4 dark-font">
+
+                                    <div class="mb-md-3 px-3 pt-md-0 flex-column flex-md-row">
+                                        <h2>Insert Questions about Wellbeing</h2>
+                                    </div>
+
+                                    <br>
+                                    <div class="sticky-bottom">
+                                        <button class="btn btn-primary fs-6 btn-lg text-white fw-bold" type="submit">Valider</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- End Wellbeing -->
+
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+            <!-- Bootstrap core JS-->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
