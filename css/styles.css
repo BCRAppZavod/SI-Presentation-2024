@@ -13587,3 +13587,36 @@ a:hover {
   box-shadow: 5px 5px 0px 0px rgba(241, 93, 92, 0.25);
   margin-bottom: 1.5rem !important;
 }
+
+.scroll-btn {
+  position: fixed;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f15d5c;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 1rem !important;
+}
+
+.scroll-btn:hover {
+  background-color: #f37574;
+}
+
+.to-top {
+  top: 60%;
+}
+
+.to-bottom {
+  bottom: 25%;
+}
+
+.scroll-logo-down {
+  width: 40px;
+  transform: rotate(180deg);
+}
+
+.scroll-logo-up {
+  width: 40px;
+}
