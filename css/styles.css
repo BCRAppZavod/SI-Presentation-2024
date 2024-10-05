@@ -13620,3 +13620,8 @@ a:hover {
 .scroll-logo-up {
   width: 40px;
 }
+
+.cols-checkbox {
+  display: grid;
+  grid-template-columns: 80% auto;
+}
